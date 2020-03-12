@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.drools.org/xsd/kmodule">
+
+    <kbase name="address-testKB" packages="rules">
+        <ksession name="address-testKS"/>
+    </kbase>
+
+    <kbase name="addressKB" packages="rules">
+        <ksession name="addressKS"/>
+    </kbase>
+
+    <kbase name="rules" packages="rules">
+        <ksession name="ksession-rule"/>
+    </kbase>
+
+</kmodule>

@@ -1,0 +1,15 @@
+package com.rules
+import java.util.Date
+import java.util.List
+import com.neo.drools.model.Server
+
+global com.neo.drools.model.fact.ResultEvent event
+
+rule "timerTest"
+    timer (cron:0/1 * * * * ?)
+    when
+        server : Server(times > 10)
+    then
+    System.out.println("已经尝试"+server.getTimes()+"次，超过预警次数！");
+    event.getEvents().add(new java.util.Date() + " - 服务器已经尝试" + server.getTimes() + "次，依旧失败，特发次报警信息！");
+end

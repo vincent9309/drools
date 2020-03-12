@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/drools-simple-demo.iml" filepath="$PROJECT_DIR$/drools-simple-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-boot-drools/spring-boot-drools.iml" filepath="$PROJECT_DIR$/../spring-boot-drools/spring-boot-drools.iml" />
+    </modules>
+  </component>
+</project>
